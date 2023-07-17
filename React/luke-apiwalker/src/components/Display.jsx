@@ -35,6 +35,7 @@ const Display = () => {
 
     if (!data) {
         return <p>Loading...</p>;
+        //Loading is showing indefinitely upon page load, maybe add a clarifier statement for and empty input on page load?
     }
 
     return (
