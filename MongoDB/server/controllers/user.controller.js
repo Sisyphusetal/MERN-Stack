@@ -31,7 +31,7 @@ module.exports.createNewUser = (req, res) => {
 }
 
 module.exports.updateExistingUser = (req, res) => {
-    User.findONeAndUpdate(
+    User.findOneAndUpdate(
         {_id: req.params.id},
         req.body,
         {new: true, runValidators: true}
